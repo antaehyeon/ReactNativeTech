@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Text, View, TouchableOpacity } from "react-native";
+import { Button } from "react-native-elements";
 
 export default class Home extends Component {
   static navigationOptions = {
@@ -9,7 +10,7 @@ export default class Home extends Component {
 
   render() {
     return (
-      <View>
+      <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
         <TouchableOpacity
           onPress={() => {
             this.props.navigation.navigate("Article");
