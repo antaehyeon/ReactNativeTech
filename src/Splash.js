@@ -7,12 +7,12 @@ const Splash = () => {
   useEffect(() => {
     setTimeout(() => {
       Actions.reset("tabbar");
-    }, 1500);
+    }, 2500);
   });
 
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <LottieView source={require("./assets/animation/10431-intro.json")} autoPlay loop></LottieView>
+    <View style={{ flex: 1, backgroundColor: "pink" }}>
+      <LottieView source={require("../assets/animation/10431-intro.json")} autoPlay loop></LottieView>
     </View>
   );
 };
